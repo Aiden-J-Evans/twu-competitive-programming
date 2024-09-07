@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University Competitive Programming Hub</title>
+    <title>Trinity Western University Competitive Programming Hub</title>
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         .hero {
@@ -28,160 +29,94 @@
         }
     </style>
 </head>
-<body>
+<body class="bg-light">
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">UniCP Hub</a>
+    <nav class="navbar navbar-expand-lg twu-navbar sticky-top">
+        <p class="h1 text-light">
+            <img src="images/twu logo.png" class="img-fluid" style="vertical-align: middle; width:1.2em;">
+            <span class="align-middle">TWU Competitive Programming</span>
+        </p>
+        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link text-light" href="resources.html">Resources</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#events">Events</a>
+                <li class="nav-item active">
+                    <a class="nav-link text-light" href="#about">About</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#leaderboard">Leaderboard</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#resources">Resources</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                <li class="nav-item active">
+                    <a class="nav-link text-light" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <div id="home" class="hero text-center">
-        <div>
-            <h1>University Competitive Programming Hub</h1>
-            <p class="lead">Join us and sharpen your problem-solving skills!</p>
-            <a href="#events" class="btn btn-lg btn-light">View Upcoming Events</a>
+    <!-- Resources Section -->
+    <div id="resources" class="text-center bg-light container p-3">
+        <div class="border p-3">
+            <h1 class="display-1 twu-text container p-5 mb-5 bg-dark text-white">Resources</h1>
+            <div class="container">
+                <h2 class="twu-text">Join the Discord server! <a href="https://discord.gg/DGrerRCeh3"><img src="images/discord.png" class="img-fluid" style="height: 75px;"></a></h2>
+            </div>
+            <div class="container">
+                <h2 class="twu-text">Link to the ICPC Pacific Northwest website. <a href="http://www.acmicpc-pacnw.org/"><img src="images/icpc.ico" class="img-fluid" style="height: 75px;"></a></h2>
+            </div>
+            <div class="container">
+                <h2 class="twu-text">Important learning resources compiled by members: <a href="resources.html"><img src="images/learning.png" class="img-fluid" style="height: 75px;"></a></h2>
+            </div>
+            
         </div>
     </div>
 
-    <!-- Events Section -->
-    <section id="events" class="events text-center bg-light">
-        <div class="container">
-            <h2 class="mb-5">Upcoming Events</h2>
+    <!-- Quick Links Section -->
+    <section id="about" class="about text-center bg-light">
+        <div class="container border py-3">
+            <h2 class="mb-5">Useful Links for Learning</h2>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Weekly Problem Set</h5>
-                            <p class="card-text">Every Friday - Solve new challenges every week.</p>
-                        </div>
-                    </div>
+                <div class="col-lg-6 mb-4">
+                    <a href="resources.html#websites"><h3>Websites</h3></a>
+                    <a href="resources.html#articles"><h3>Articles</h3></a>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Coding Marathon</h5>
-                            <p class="card-text">Next: September 15 - A 24-hour coding challenge.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Team Programming Contest</h5>
-                            <p class="card-text">Next: October 10 - Compete with teams and win prizes.</p>
-                        </div>
-                    </div>
+                <div class="col-lg-6 mb-4">
+                    <a href="resources.html#videos"><h3>Videos</h3></a>
+                    <a href="resources.html#roadmap"><h3>Roadmap</h3></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Leaderboard Section -->
-    <section id="leaderboard" class="leaderboard text-center">
+    <!-- About Section -->
+    <section id="about" class="about text-center bg-light">
         <div class="container">
-            <h2 class="mb-5">Leaderboard</h2>
-            <div class="table-responsive">
-                <table class="table table-striped">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th scope="col">Rank</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Points</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>John Doe</td>
-                            <td>4500</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jane Smith</td>
-                            <td>4300</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Alex Johnson</td>
-                            <td>4200</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-
-    <!-- Resources Section -->
-    <section id="resources" class="resources text-center bg-light">
-        <div class="container">
-            <h2 class="mb-5">Resources</h2>
+            <h2 class="mb-5">About Us</h2>
             <div class="row">
-                <div class="col-md-4">
-                    <h5>Beginner Guide</h5>
-                    <p>A complete guide to getting started with competitive programming.</p>
-                    <a href="#" class="btn btn-primary">Download PDF</a>
+                <div class="col-lg-6 mb-4">
+                    <h3>Team Meetings</h3>
+                    <p>
+                        The Trinity Western University ICPC Competitive Programming Team meets on Thursdays at 4:30 p.m. in the computer lab (NEU, A20). During these meetings, we are given a problem set to solve before the meeting ends.
+                    </p>
+                    <p>
+                        We compete in the ICPC Pacific Northwest division and the next competition is November 16th, 2024 at TBD.
+                    </p>
                 </div>
-                <div class="col-md-4">
-                    <h5>Advanced Topics</h5>
-                    <p>Explore algorithms, data structures, and more advanced topics.</p>
-                    <a href="#" class="btn btn-primary">View Tutorials</a>
-                </div>
-                <div class="col-md-4">
-                    <h5>Practice Problems</h5>
-                    <p>Sharpen your skills with a variety of coding challenges.</p>
-                    <a href="#" class="btn btn-primary">Start Solving</a>
+                <div class="col-lg-6 mb-4">
+                    <h3>Previous Results</h3>
+                    <p>
+                        In ICPC 2023 Regionals, we had teams place 1st and 3rd, along with other strong placements.
+                    </p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact text-center">
-        <div class="container">
-            <h2 class="mb-5">Contact Us</h2>
-            <form>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <input type="text" class="form-control" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <input type="email" class="form-control" placeholder="Your Email" required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2024 University Competitive Programming Hub. All rights reserved.</p>
+        <p>2024 Trinity Western University Competitive Programming Hub.</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
