@@ -6,3 +6,25 @@
 .twu-text {
   color: #868686;
 }
+
+ /* Custom Footer Color */
+ .twu-footer {
+  background-color: #003366; /* Replace with your desired color */
+  color: #f8f9fa; /* Text color */
+}
+
+/* Custom Button Color */
+.twu-btn {
+  background-color: #003366; /* Replace with your desired color */
+  color: #fff; /* Text color */
+  border: none; /* Remove border */
+}
+.twu-btn:hover {
+  background-color: #003366; /* Darker shade on hover */
+}
+
+.twu-container {
+  background-color: #003366; /* Replace with your desired color */
+  color: #fff; /* Text color */
+  border: none; /* Remove border */
+}
